@@ -1,0 +1,100 @@
+.Home {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-around;
+  padding: 4%;
+}
+
+.Home-title {
+  margin: 0;
+  font-size: 10rem;
+  margin-bottom: 1rem;
+  color: #306D85; // Assurez-vous que la couleur est bien définie ou utilisez une valeur HEX/RGB directement.
+}
+
+.card-Home {
+  width: 300px;
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-image-Home {
+  width: 50px;
+  height: auto;
+}
+
+.card-content-Home {
+  padding: 20px;
+}
+
+.card-title-Home{
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(97, 97, 206);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.card-description-Home{
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color:white;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+.Home{
+  height:86vh;
+width:50%;
+}
+
+.card-image-Home {
+  width:50%;
+}
+.Home-title {
+  margin: 0;
+  font-size: 4rem;
+}
+.card-Home {
+  width: 250px;
+}
+}
+@media (max-width:425px) {
+  .card-description-Home{
+padding:10px;
+font-size: small;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .Home{
+    height:70vh;
+  
+  }
+  .Home-title {
+    margin: 0;
+    font-size: 4rem;
+    margin-bottom:15px;
+  }
+  .card-Home {
+    width: 160px;
+
+  }
+}

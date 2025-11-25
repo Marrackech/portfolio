@@ -1,0 +1,131 @@
+@charset "UTF-8";
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  width: 100%; /* S'assure que la navbar couvre toute la largeur de la page */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  margin: 0; /* Évite tout espace autour de la navbar */
+  position: relative; /* Permet au background de rester sur toute la largeur */
+}
+nav .logo {
+  order: -1;
+  margin-right: auto;
+}
+nav .logo img {
+  height: 40px;
+  transition: transform 0.3s;
+}
+nav .logo img:hover {
+  transform: rotate(360deg);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+}
+nav ul li {
+  margin-left: 20px;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+nav ul a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  background-color: rgb(77, 25, 14);
+  border-radius: 2px;
+}
+nav ul a:hover {
+  color: white;
+}
+nav .space-mode-button button {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(77, 25, 14);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+nav .space-mode-button button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+nav .space-mode-button button span {
+  margin-right: 10px;
+}
+nav .space-mode-button button img {
+  height: 20px;
+  transition: transform 0.3s;
+  border-radius: 50%;
+}
+nav .space-mode-button button img:hover {
+  transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  ul a {
+    display: block;
+    padding: 10px 0;
+    margin-right: 30px;
+  }
+  .space-mode-button button {
+    width: 100%;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    max-width: 200px;
+  }
+}
+@media (max-width: 380px) {
+  * {
+    font-size: 60%;
+    padding: 0;
+  }
+  nav {
+    padding: 5px 10px;
+  }
+  .logo img {
+    height: 30px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  ul li {
+    font-size: 12px;
+  }
+  .space-mode-button button {
+    padding: 8px;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

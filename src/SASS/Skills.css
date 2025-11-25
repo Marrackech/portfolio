@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.skill-image {
+  width: 250px;
+}
+
+.Robot {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.cloud-bubble {
+  margin-top: 15px;
+  margin-left: 15px;
+  position: relative;
+  display: inline-block;
+  width: 300px; /* Largeur de la bulle */
+  height: 200px; /* Hauteur de la bulle */
+  background: linear-gradient(to right, #00C5FF, #5F00FF); /* Dégradé approximatif du logo Yarn */
+  border-radius: 50%; /* Arrondi pour former une bulle */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  overflow: hidden; /* Masque le contenu qui dépasse */
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 80% 100%, 50% 70%, 20% 100%, 0% 70%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 80% 100%, 50% 70%, 20% 100%, 0% 70%); /* Forme de la bulle de nuage */
+}
+
+.cloud-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Assure que le contenu est au-dessus des autres éléments */
+  padding: 20px;
+  border-radius: 10%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); /* Fond dégradé pour simuler la texture de nuage */
+}
+
+.skills-title {
+  font-family: "Comic Sans MS", cursive;
+  color: rgb(97, 97, 206);
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-right: 1.5em;
+}
+
+.reflection-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.reflection-container img {
+  width: 100px;
+  height: 50px;
+}
+.reflection-container .reflection-grid-cell {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin: 5px;
+}
+.reflection-container .reflection-content {
+  text-align: center;
+}
+.reflection-container .skill-card {
+  width: 150px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reflection-container .skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .cloud-content {
+    font-size: xx-small;
+    padding: 2px;
+  }
+  .skills-title {
+    padding: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .skills-title {
+    display: flex;
+    justify-content: start;
+  }
+  .cloud-content {
+    font-size: 40%;
+    padding: 2px;
+  }
+}
+@media (max-width: 375px) {
+  .skills-title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 325px) {
+  .cloud-content {
+    width: 50px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-weight: bolder;
+  }
+  .skill-image {
+    width: 150px;
+  }
+  .skills-title {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=Skills.css.map */

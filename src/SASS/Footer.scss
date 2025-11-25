@@ -1,0 +1,425 @@
+// // .footer {
+// //     background-image: url('../../images/lune.png');
+// //     background-position: center top -100%;
+// //     display: flex;
+// //     justify-content: space-between;
+// //     align-items: center;
+// //     background-color: #333;
+// //     color: white;
+// //     padding: 20px;
+// //     width: 100%;
+// //     position: relative;
+// //     bottom: 0;
+// //   }
+  
+// //   .footer-left,
+// //   .footer-right {
+// //     width: 50%;
+// //   }
+  
+// //   .footer-left {
+// //     display: flex;
+// //     justify-content: flex-start;
+// //     align-items: center;
+// //   }
+  
+// //   .card {
+// //     background-color: #444;
+// //     padding: 20px;
+// //     border-radius: 8px;
+// //     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// //     display: flex;
+// //     flex-direction: column;
+// //     align-items: center;
+// //     transition: transform 0.3s, background-color 0.3s;
+// //   }
+  
+// //   .card:hover {
+// //     transform: scale(1.05);
+// //     background-color: #555;
+// //   }
+  
+// //   .card-image {
+// //     width: 100px;
+// //     height: 100px;
+// //     object-fit: cover;
+// //     border-radius: 50%;
+// //     margin-bottom: 10px;
+// //     transition: transform 0.3s;
+// //   }
+  
+// //   .card-image:hover {
+// //     transform: rotate(360deg) scale(1.1);
+// //   }
+  
+// //   .card-description h4 {
+// //     margin: 10px 0;
+// //     color: #fff;
+// //   }
+  
+// //   .card-description p {
+// //     margin: 0;
+// //     color: #ccc;
+// //   }
+  
+// //   .footer-right {
+    
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: space-between;
+// //     align-items: flex-end;
+// //     padding-right: 50px; /* Ajouter un padding pour garder un espace de 10px à droite */
+// //   }
+  
+// //   .social-icons {
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// //     margin-bottom: 10px;
+// //   }
+  
+// //   .social-icons a {
+// //     margin: 10px 0;
+// //   }
+  
+// //   .social-icons img {
+// //     width: 40px;
+// //     height: 40px;
+// //     transition: transform 0.3s;
+// //     border-radius: 30%;
+// //     margin-right: 10px; /* Ajouter une marge à droite pour s'assurer qu'ils ne touchent pas le bord */
+// //   }
+  
+// //   .social-icons img:hover {
+// //     transform: scale(1.4);
+// //   }
+  
+// //   .footer-right .copyright {
+// //     text-align: center;
+// //   }
+// .footer {
+//   background-image: url('../../images/lune.png');
+//   background-position: center top -100%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: #333;
+//   color: white;
+//   padding: 20px;
+//   width: 100%;
+//   box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+//   position: relative;
+//   bottom: 0;
+//   flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+// }
+
+// .footer-left,
+// .footer-right {
+//   width: 45%; /* Réduit la largeur pour laisser un peu plus d'espace */
+//   min-width: 200px; /* Définit une largeur minimale pour éviter que les éléments deviennent trop étroits */
+//   box-sizing: border-box; /* Assure que le padding est pris en compte dans la largeur */
+// }
+
+// .footer-left {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+// }
+
+// .card {
+//   background-color: #444;
+//   padding: 20px;
+//   border-radius: 8px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transition: transform 0.3s, background-color 0.3s;
+// }
+
+// .card:hover {
+//   transform: scale(1.05);
+//   background-color: #555;
+// }
+
+// .card-image {
+//   width: 100px;
+//   height: 100px;
+//   object-fit: cover;
+//   border-radius: 50%;
+//   margin-bottom: 10px;
+//   transition: transform 0.3s;
+// }
+
+// .card-image:hover {
+//   transform: rotate(360deg) scale(1.1);
+// }
+
+// .card-description h4 {
+//   margin: 10px 0;
+//   color: #fff;
+// }
+
+// .card-description p {
+//   margin: 0;
+//   color: #ccc;
+// }
+
+// .footer-right {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   padding-right: 30px; /* Réduit le padding à droite */
+// }
+
+// .social-icons {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin-bottom: 10px;
+// }
+
+// .social-icons a {
+//   margin: 10px 0;
+// }
+
+// .social-icons img {
+//   width: 40px;
+//   height: 40px;
+//   transition: transform 0.3s;
+//   border-radius: 30%;
+//   margin-right: 10px;
+// }
+
+// .social-icons img:hover {
+//   transform: scale(1.4);
+// }
+
+// .footer-right .copyright {
+//   text-align: center;
+//   margin-top: 10px; /* Ajout d'un petit espacement au-dessus */
+// }
+
+// @media (max-width: 768px) {
+//   .footer {
+//     flex-direction: column;
+//     align-items: flex-start;
+//     padding: 10px 20px;
+//   }
+
+//   .footer-left,
+//   .footer-right {
+//     width: 100%;
+//     padding: 10px 0;
+//   }
+
+//   .footer-right {
+//     align-items: flex-start;
+//     padding-right: 0;
+//   }
+
+//   .social-icons {
+    
+//     justify-content: flex-start;
+//   }
+
+//   .social-icons a {
+//     margin: 0 10px 0 0;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .footer {
+//     padding: 10px;
+//   }
+
+//   .footer-left,
+//   .footer-right {
+//     padding: 5px 0;
+//   }
+
+//   .social-icons img {
+//     width: 30px;
+//     height: 30px;
+//   }
+
+//   .card {
+//     padding: 15px;
+//   }
+
+//   .card-image {
+//     width: 80px;
+//     height: 80px;
+//   }
+// }
+.footer {
+  background-image: url('../../images/lune.png');
+  background-position: center top -100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; 
+  position: relative;
+  bottom: 0;
+}
+
+.footer-left,
+.footer-right {
+  width: 45%; 
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #555;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.card-image:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.card-description h4 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card-description p {
+  margin: 0;
+  color: #ccc;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 30px; 
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 10px 0;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+  border-radius: 30%;
+  margin-right: 10px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.4);
+}
+
+.footer-right .copyright {
+  text-align: center;
+  margin-top: 10px; 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .footer-right {
+    align-items: flex-end;
+    padding-right: 0;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .social-icons a {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 10px;
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 50%;
+    padding: 5px 0;
+  }
+
+  .footer-left {
+    justify-content: flex-start;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-image {
+    width: 80px;
+    height: 80px;
+  }
+}
